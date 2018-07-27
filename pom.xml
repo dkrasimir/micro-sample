@@ -64,10 +64,10 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <failOnMissingWebXml>false</failOnMissingWebXml>
-		<payara.adminPort>50048</payara.adminPort>
+		<payara.adminPort>4848</payara.adminPort>
         <payara.username>admin</payara.username>
         <payara.password>admin</payara.password>
-        <payara.hostname>docker</payara.hostname>
+        <payara.hostname>localhost</payara.hostname>
     </properties>	
 	<profiles>
         <profile>
