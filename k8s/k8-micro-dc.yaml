@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata: 
+  name: micro-sample
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: micro-sample
+    spec:
+      containers:
+      - name: micro-sample
+        image: micro-sample
+        ports:
+        - containerPort: 8080
