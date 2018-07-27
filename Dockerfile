@@ -23,8 +23,8 @@ ENV DEPLOYMENT_DIR=${PAYARA_HOME}/domains/${DOMAIN_NAME}/autodeploy/
 WORKDIR /opt/payara41/glassfish/bin
 # expose ports
 
-#EXPOSE 4848 8009 8080 8181
-EXPOSE 8080
+EXPOSE 4848 8009 8080 8181
+#EXPOSE 8080
 
 # deploy application
 ADD target/*.war ${DEPLOYMENT_DIR}
